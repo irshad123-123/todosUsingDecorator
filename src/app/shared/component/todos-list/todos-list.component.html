@@ -1,0 +1,11 @@
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between" 
+            *ngFor = 'let todo of msg'
+            >
+                <strong>{{todo.todoItem}}</strong>
+                <div>
+                    <button class="btn-sm mr-2" mat-raised-button color="primary">Edit</button>
+                    <button class="btn-sm" mat-raised-button color="warn">Remove</button>
+                </div>
+            </li>
+        </ul>

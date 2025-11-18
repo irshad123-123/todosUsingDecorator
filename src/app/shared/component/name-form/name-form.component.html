@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <form #addName = 'ngForm'>
+            <div class="form-group">
+                <label for="names">Add Names*</label>
+                <input
+                required
+                ngModel
+                name="name"
+                class="form-control" id="names">
+            </div>
+            <button
+            [disabled] = 'addName.invalid'
+            (click) = 'onClick(addName)'
+            class="btn-block" mat-raised-button color="primary">Add Name</button>
+        </form>
+    </div>
+</div>

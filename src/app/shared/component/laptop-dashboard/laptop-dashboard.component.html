@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-6">
+        <h2>Add Laptops</h2>
+        <app-laptop-form
+        (transfer) = 'onClick($event)'
+        ></app-laptop-form>
+    </div>
+    <div class="col-md-6">
+        <app-laptop-list
+        [laptopList] = 'laptopArr'
+        ></app-laptop-list>
+    </div>
+</div>

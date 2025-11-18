@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <form #laptop = 'ngForm'>
+            <div class="form-group">
+                <label for="lap">Add Laptop</label>
+                <input 
+                ngModel
+                required
+                name="laptopName"
+                id="lap" class="form-control">
+            </div>
+            <button
+            [disabled] = 'laptop.invalid'
+            (click) = 'onClick(laptop)'
+            class="btn-block" mat-raised-button color="primary">Add Laptop</button>
+        </form>
+    </div>
+</div>

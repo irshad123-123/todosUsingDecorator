@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <form #bikeRef = 'ngForm'>
+            <div class="form-group">
+                <label for="bik">Add Bike</label>
+                <input
+                ngModel
+                required
+                name="bikeName"
+                class="form-control" id="bik">
+            </div>
+            <button
+            [disabled] = 'bikeRef.invalid'
+            (click) = 'onClick(bikeRef)'
+            class="btn-block" mat-raised-button color="primary">Add Bikes</button>
+        </form>
+    </div>
+</div>

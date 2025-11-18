@@ -1,0 +1,13 @@
+<div class="row mb-5">
+    <div class="col-md-6">
+        <h2>Add Bikes</h2>
+        <app-bike-form
+        (transferBike) = 'onClick($event)'
+        ></app-bike-form>
+    </div>
+    <div class="col-md-6">
+        <app-bike-list
+        [bike] = 'bikeArr'
+        ></app-bike-list>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <form #mobile123 = 'ngForm'>
+            <div class="form-group">
+                <label for="mobile">Add Mobile</label>
+                <input
+                ngModel
+                required
+                name="mobileName"
+                class="form-control" id="mobile">
+            </div>
+            <button 
+            [disabled] = 'mobile123.invalid'
+            (click) = 'onClick(mobile123)'
+            class="btn-block" mat-raised-button color="primary">Add Mobiles</button>
+        </form>
+    </div>
+</div>

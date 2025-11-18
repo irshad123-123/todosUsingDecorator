@@ -1,0 +1,18 @@
+<form #formSubmit = 'ngForm'>
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="todo">Todos*</label>
+                <input
+                required
+                ngModel
+                name="todoItem"
+                class="form-control" id="todo" type="text">
+            </div>
+            <button
+            [disabled] = "formSubmit.invalid"
+            (click) = 'onClick(formSubmit)'
+            class="btn-block" mat-raised-button color="primary">Add Todos</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-6 mb-md-0 mb-3">
+        <h2>Skills</h2>
+        <app-todos-form
+        (transfer) = 'onClick($event)'
+        ></app-todos-form>
+    </div>
+    <div class="col-md-6">
+        <app-todos-list
+        [msg] = 'todoArr'
+        ></app-todos-list>
+    </div>
+</div>
