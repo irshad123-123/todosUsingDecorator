@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-body">
+        <form #stdRef = 'ngForm'>
+            <div class="form-group">
+                <input
+                ngModel
+                required
+                name="fname"
+                class="form-control" type="text" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input
+                ngModel
+                required
+                name="lname"
+                class="form-control" type="text" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input
+                ngModel
+                required
+                name="email"
+                class="form-control" type="text" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input
+                ngModel
+                required
+                name="contact"
+                class="form-control" type="text" placeholder="Contact">
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select
+                ngModel
+                required
+                name="status"
+                class="form-control" id="status">
+                    <option value="true">YES</option>
+                    <option value="false">NO</option>
+                </select>
+            </div>
+            <button
+            [disabled] = 'stdRef.invalid'
+            (click) = 'onClick(stdRef)'
+            class="btn-block" mat-raised-button color="primary">Add Student</button>
+        </form>
+    </div>
+</div>

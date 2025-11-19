@@ -30,7 +30,7 @@ export class LaptopFormComponent implements OnInit {
     }
     form.reset()
     this.transfer.emit(val)
-    this._matSnackBar.open('The laptop is added successfully', 'close',{
+    this._matSnackBar.open('The laptop is added successfully !!!', 'close',{
       duration:3000,
       verticalPosition:'top',
       horizontalPosition : 'left'

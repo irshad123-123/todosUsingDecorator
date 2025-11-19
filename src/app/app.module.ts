@@ -21,6 +21,9 @@ import { BikeFormComponent } from './shared/component/bike-form/bike-form.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { StudentDashboardComponent } from './shared/component/student-dashboard/student-dashboard.component';
+import { StudentFormComponent } from './shared/component/student-form/student-form.component';
+import { StudentListComponent } from './shared/component/student-list/student-list.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MobileFormComponent,
     BikeDashboardComponent,
     BikeListComponent,
-    BikeFormComponent
+    BikeFormComponent,
+    StudentDashboardComponent,
+    StudentFormComponent,
+    StudentListComponent
   ],
   imports: [
     BrowserModule,

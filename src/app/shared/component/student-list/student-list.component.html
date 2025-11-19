@@ -1,0 +1,31 @@
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Status</th>
+                <th>Edit</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let std of stdData; let i = index'>
+                <td>{{i+1}}</td>
+                <td>{{std.fname}} {{std.lname}}</td>
+                <td>{{std.email}}</td>
+                <td>{{std.contact}}</td>
+                <td>{{std.status ? 'YES' : 'NO'}}</td>
+                <td>
+                    <button mat-raised-button color="primary">Edit</button>
+                </td>
+                <td>
+                    <button mat-raised-button color="warn">Remove</button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

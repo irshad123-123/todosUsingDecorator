@@ -1,0 +1,13 @@
+<div class="row mb-5">
+    <div class="col-md-4 mb-md-0 mb-3">
+        <h2>Add Student</h2>
+        <app-student-form
+        (stdEmit) = 'onClick($event)'
+        ></app-student-form>
+    </div>
+    <div class="col-md-8">
+        <app-student-list
+        [stdData] = 'stdArr'
+        ></app-student-list>
+    </div>
+</div>
