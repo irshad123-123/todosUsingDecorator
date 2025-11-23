@@ -1,0 +1,17 @@
+<h2 class="bg-primary p-2 rounded">Using @Input & @Output CRUD</h2>
+<div class="row">
+    <div class="col-md-4 mb-3 mb-md-0">
+        <app-student1-form
+        (onUpdateObj) = 'onUpdatedObj($event)'
+        [editStdObj] = 'editStdObj'
+        (onNewStd) = 'newStd($event)'
+        ></app-student1-form>
+    </div>
+    <div class="col-md-8">
+        <app-student1-list
+        (stdRemove) = 'onRemoveStd($event)'
+        (stdEdit) = 'onEditStd($event)'
+        [stdArr] = 'stdArr'
+        ></app-student1-list>
+    </div>
+</div>

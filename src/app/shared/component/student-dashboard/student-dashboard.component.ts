@@ -19,7 +19,7 @@ export class StudentDashboardComponent implements OnInit {
       lname : 'Doe',
       email : 'jhon@gmail.com',
       contact : 1234567890,
-      status : true,
+      status : 'active',
       stdId : '123'
     },
     {
@@ -27,7 +27,7 @@ export class StudentDashboardComponent implements OnInit {
       lname : 'Doe',
       email : 'may@gmail.com',
       contact : 1234567890,
-      status : false,
+      status : 'in-active',
       stdId : '124'
     },
     {
@@ -35,7 +35,7 @@ export class StudentDashboardComponent implements OnInit {
       lname : 'Doe',
       email : 'june@gmail.com',
       contact : 1234567890,
-      status : false,
+      status : 'active',
       stdId : '125'
     },
     {
@@ -43,7 +43,7 @@ export class StudentDashboardComponent implements OnInit {
       lname : 'Einstein',
       email : 'albert@gmail.com',
       contact : 1234567890,
-      status : true,
+      status : 'in-active',
       stdId : '126'
     }
   ]

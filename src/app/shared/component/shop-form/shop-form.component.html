@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-body">
+        <form #addShop = 'ngForm' (ngSubmit) = 'onSubmitShop()'>
+            <div class="form-group">
+                <input 
+                required
+                ngModel
+                name="shopName"
+                class="form-control" placeholder="Shop Name">
+            </div>
+            <div class="form-group">
+                <input 
+                required
+                ngModel
+                name="work"
+                class="form-control" placeholder="Work">
+            </div>
+            <div class="form-group">
+                <input
+                required
+                ngModel
+                name="contact"
+                class="form-control" placeholder="Contact">
+            </div>
+            <div class="form-group">
+                <input
+                required
+                ngModel
+                name="email"
+                class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="time">Shop Timing</label>
+                <input 
+                required
+                ngModel
+                name="shopTiming"
+                class="form-control" id="time" type="time">
+            </div>
+            <button
+            [disabled] = 'addShop.invalid'
+            class="btn-block" mat-raised-button color="primary">Add Shop</button>
+        </form>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IstdArr } from '../../models/student';
 import { NgForm } from '@angular/forms';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-student-form',
@@ -23,7 +24,7 @@ export class StudentFormComponent implements OnInit {
     });
   };
   onClick(form : NgForm){
-    let val = {
+    let val :IstdArr = {
       ...form.value,
       stdId : this.Uuid()
     }

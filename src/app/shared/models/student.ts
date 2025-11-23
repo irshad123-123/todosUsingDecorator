@@ -3,6 +3,6 @@ export interface IstdArr{
     lname: string;
     email: string;
     contact: number;
-    status: boolean;
+    status: 'in-active' | 'active'
     stdId : string
 }

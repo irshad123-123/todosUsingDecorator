@@ -17,13 +17,12 @@
                 <td>{{std.fname}} {{std.lname}}</td>
                 <td>{{std.email}}</td>
                 <td>{{std.contact}}</td>
-                <td>{{std.status ? 'YES' : 'NO'}}</td>
+                <td>{{std.status === 'in-active' ? 'NO' : 'YES'}}</td>
                 <td>
                     <button mat-raised-button color="primary">Edit</button>
                 </td>
                 <td>
                     <button mat-raised-button color="warn">Remove</button>
-
                 </td>
             </tr>
         </tbody>

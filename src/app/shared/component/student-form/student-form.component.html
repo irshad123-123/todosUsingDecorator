@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-body">
-        <form #stdRef = 'ngForm'>
+        <form #stdRef = 'ngForm' (ngSubmit) = 'onClick(stdRef)'>
             <div class="form-group">
                 <input
                 ngModel
@@ -42,7 +42,6 @@
             </div>
             <button
             [disabled] = 'stdRef.invalid'
-            (click) = 'onClick(stdRef)'
             class="btn-block" mat-raised-button color="primary">Add Student</button>
         </form>
     </div>

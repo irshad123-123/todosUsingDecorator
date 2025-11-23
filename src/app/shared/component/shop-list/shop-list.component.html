@@ -1,0 +1,32 @@
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Shop Name</th>
+                <th>Work</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Shop Timing</th>
+                <th>Edit</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let shop of shopData; let i= index'>
+                <td>{{i+1}}</td>
+                <td>{{shop.shopName}}</td>
+                <td>{{shop.work}}</td>
+                <td>{{shop.mobileNo}}</td>
+                <td>{{shop.emial}}</td>
+                <td>{{shop.shopTiming}}</td>
+                <td>
+                    <button class="btn-sm" mat-raised-button color="primary">Edit</button>
+                </td>
+                <td>
+                    <button class="btn-sm" mat-raised-button color="warn">Remove</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -24,6 +24,12 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { StudentDashboardComponent } from './shared/component/student-dashboard/student-dashboard.component';
 import { StudentFormComponent } from './shared/component/student-form/student-form.component';
 import { StudentListComponent } from './shared/component/student-list/student-list.component';
+import { ShopDashboardComponent } from './shared/component/shop-dashboard/shop-dashboard.component';
+import { ShopListComponent } from './shared/component/shop-list/shop-list.component';
+import { ShopFormComponent } from './shared/component/shop-form/shop-form.component';
+import { Student1DashboardComponent } from './shared/component/student1-dashboard/student1-dashboard.component';
+import { Student1ListComponent } from './shared/component/student1-list/student1-list.component';
+import { Student1FormComponent } from './shared/component/student1-form/student1-form.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +51,13 @@ import { StudentListComponent } from './shared/component/student-list/student-li
     BikeFormComponent,
     StudentDashboardComponent,
     StudentFormComponent,
-    StudentListComponent
+    StudentListComponent,
+    ShopDashboardComponent,
+    ShopListComponent,
+    ShopFormComponent,
+    Student1DashboardComponent,
+    Student1ListComponent,
+    Student1FormComponent,
   ],
   imports: [
     BrowserModule,
