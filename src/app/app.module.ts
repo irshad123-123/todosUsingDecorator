@@ -33,6 +33,12 @@ import { Student1FormComponent } from './shared/component/student1-form/student1
 import { FairDashboardComponent } from './shared/component/fair-dashboard/fair-dashboard.component';
 import { FairListComponent } from './shared/component/fair-list/fair-list.component';
 import { FairFormComponent } from './shared/component/fair-form/fair-form.component';
+import { Todo1DashboardComponent } from './shared/component/todo1-dashboard/todo1-dashboard.component';
+import { Todo1ListComponent } from './shared/component/todo1-list/todo1-list.component';
+import { Todo1FormComponent } from './shared/component/todo1-form/todo1-form.component';
+import { CardDashboardComponent } from './shared/component/card-dashboard/card-dashboard.component';
+import { CardListComponent } from './shared/component/card-list/card-list.component';
+import { CardFormComponent } from './shared/component/card-form/card-form.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +70,12 @@ import { FairFormComponent } from './shared/component/fair-form/fair-form.compon
     FairDashboardComponent,
     FairListComponent,
     FairFormComponent,
+    Todo1DashboardComponent,
+    Todo1ListComponent,
+    Todo1FormComponent,
+    CardDashboardComponent,
+    CardListComponent,
+    CardFormComponent,
   ],
   imports: [
     BrowserModule,

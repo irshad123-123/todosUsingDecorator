@@ -1,0 +1,17 @@
+<h2 class="p-2 rounded">Add TodoItem Using @Input and @Output</h2>
+<div class="row">
+    <div class="col-md-6">
+        <app-todo1-form
+        (UpdateTodoEmit) = 'onUpdatedObj($event)'
+        [editTodo] = 'editTodo'
+        (newAddedTodo) = 'onNewTodo($event)'
+        ></app-todo1-form>
+    </div>
+    <div class="col-md-6">
+        <app-todo1-list
+        (todoEdit) = 'onEditTodo($event)'
+        (todoRemove) = 'onRemoveTodo($event)'
+        [todoFromDash] = 'todo1Arr'
+        ></app-todo1-list>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="row">
+    <h2 class="p-2 rounded w-100">Add Card Using @Input and @Output</h2>
+    <div class="col-md-6 offset-md-2 mb-3">
+        <app-card-form
+        (updatedObj) = 'onUpdatedCard($event)'
+        [editObj] = 'editObj'
+        (newCardEmit) = 'onNewCard($event)'
+        ></app-card-form>
+    </div>
+</div>
+<div class="row" *ngIf = 'cardArr.length>0; else:noCard'>
+    <div class="col-md-4 mb-3 h-100" *ngFor = 'let card of cardArr'>
+        <app-card-list
+        (editCard) = 'onEditCard($event)'
+        (removeCard) = 'onRemoveCard($event)'
+        [fromCardArr] = 'card'
+        ></app-card-list>
+    </div>
+</div>
+<ng-template #noCard>
+    <p class="alert alert-warning">There is no card is available !!!</p>
+</ng-template>

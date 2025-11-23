@@ -43,7 +43,7 @@ export class Student1FormComponent implements OnInit, OnChanges {
     })
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes)
+    // console.log(changes)
     if(changes['editStdObj'].currentValue){
       this.stdForm.form.patchValue(changes['editStdObj'].currentValue)
       this.isEditMode = true

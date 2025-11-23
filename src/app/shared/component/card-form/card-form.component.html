@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-body">
+        <form #cardForm='ngForm' (ngSubmit)='onNewCard()'>
+            <div class="form-group">
+                <label for="titleName">Title Name</label>
+                <input ngModel required name="titleName" class="form-control" id="titleName">
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea ngModel required name="content" class="form-control" id="content"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="product">About</label>
+                <select ngModel required name="about" id="product" class="form-control">
+                    <option value="Theory">Theory</option>
+                    <option value="Coding">Coding</option>
+                </select>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button [disabled] = 'cardForm.invalid' *ngIf='!isEditMode' type="submit" mat-raised-button color="primary">Add Card</button>
+                <button 
+                (click) = 'onUpdateCard()'
+                class="mr-2" *ngIf='isEditMode' type="button" mat-raised-button color="primary">Update Card</button>
+                <button
+                (click) = 'onCancel()'
+                *ngIf='isEditMode' type="button" mat-raised-button color="primary">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
