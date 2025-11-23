@@ -1,0 +1,48 @@
+.content {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Paragraph overlay */
+// .content .detail {
+//   position: absolute;
+//   bottom: 0;              /* image ke upar bottom me */
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   padding: 10px;
+
+//   background: rgba(0, 0, 0, 0.3); /* black overlay */
+//   color: #fff;
+// }
+// .content .detail{
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+// }
+
+// .content .detail p {
+//   margin: 0;
+//   font-size: 14px;
+// }
+

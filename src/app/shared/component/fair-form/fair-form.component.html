@@ -1,0 +1,11 @@
+<div
+(click) = 'onClick(d)'
+class="card mb-3" *ngFor = 'let d of newData'>
+    <div class="card-body">
+        <h2 class="m-0">{{d.fairName}}</h2>
+        <div class="bg-white">
+            <p class="mb-0">Event Type : {{d.type}}</p>
+            <p class="mb-0">Date : {{(d.startDate)*1000 | date}}</p>
+        </div>
+    </div>
+</div>

@@ -30,6 +30,9 @@ import { ShopFormComponent } from './shared/component/shop-form/shop-form.compon
 import { Student1DashboardComponent } from './shared/component/student1-dashboard/student1-dashboard.component';
 import { Student1ListComponent } from './shared/component/student1-list/student1-list.component';
 import { Student1FormComponent } from './shared/component/student1-form/student1-form.component';
+import { FairDashboardComponent } from './shared/component/fair-dashboard/fair-dashboard.component';
+import { FairListComponent } from './shared/component/fair-list/fair-list.component';
+import { FairFormComponent } from './shared/component/fair-form/fair-form.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +61,9 @@ import { Student1FormComponent } from './shared/component/student1-form/student1
     Student1DashboardComponent,
     Student1ListComponent,
     Student1FormComponent,
+    FairDashboardComponent,
+    FairListComponent,
+    FairFormComponent,
   ],
   imports: [
     BrowserModule,

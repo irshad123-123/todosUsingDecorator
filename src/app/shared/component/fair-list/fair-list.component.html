@@ -1,0 +1,10 @@
+        <figure class="content">
+            <img [src] = 'imgData.bannerUrl'>
+            <div class="detail">
+                <p class="mb-0">Event Type : {{imgData.type}}</p>
+            <p class="mb-0">Date : {{(imgData.startDate)*1000 | date}}</p>
+            </div>
+        </figure>
+        <figcaption>
+            <p [innerHTML] = 'imgData.candidateDescription'></p>
+        </figcaption>
